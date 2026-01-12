@@ -1,0 +1,50 @@
+/* --- Halo AI Studios: Ultra Cyber Core --- */
+:root {
+    --primary-hue: 180; 
+    --primary-saturation: 100%;
+    --primary-lightness: 50%;
+    -[span_9](start_span)-primary: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness));[span_9](end_span)
+    --secondary: #ff00ff;
+    -[span_10](start_span)-bg-primary: #0a0a0a;[span_10](end_span)
+    -[span_11](start_span)-text-primary: #ffffff;[span_11](end_span)
+    -[span_12](start_span)-glass-bg: rgba(255, 255, 255, 0.1);[span_12](end_span)
+    -[span_13](start_span)[span_14](start_span)-glass-border: rgba(255, 255, 255, 0.2);[span_13](end_span)[span_14](end_span)
+    -[span_15](start_span)-border-radius: 15px;[span_15](end_span)
+    -[span_16](start_span)-animation-speed: 0.3s;[span_16](end_span)
+    -[span_17](start_span)-container: #2a2a2a;[span_17](end_span)
+}
+
+body[data-theme="light"] {
+    -[span_18](start_span)-bg-primary: #f8f9fa;[span_18](end_span)
+    -[span_19](start_span)-text-primary: #1a1a1a;[span_19](end_span)
+    -[span_20](start_span)-glass-bg: rgba(0, 0, 0, 0.05);[span_20](end_span)
+}
+
+body {
+    margin: 0;
+    [span_21](start_span)font-family: 'Inter', sans-serif;[span_21](end_span)
+    [span_22](start_span)background: var(--bg-primary);[span_22](end_span)
+    [span_23](start_span)color: var(--text-primary);[span_23](end_span)
+    [span_24](start_span)transition: all var(--animation-speed) ease;[span_24](end_span)
+    [span_25](start_span)display: flex;[span_25](end_span)
+    [span_26](start_span)flex-direction: column;[span_26](end_span)
+}
+
+/* Glassmorphic Card from Doc */
+.card {
+    [span_27](start_span)background: var(--glass-bg);[span_27](end_span)
+    [span_28](start_span)border: 1px solid var(--glass-border);[span_28](end_span)
+    [span_29](start_span)border-radius: var(--border-radius);[span_29](end_span)
+    [span_30](start_span)padding: 2rem;[span_30](end_span)
+    [span_31](start_span)[span_32](start_span)backdrop-filter: blur(20px);[span_31](end_span)[span_32](end_span)
+    [span_33](start_span)box-shadow: 0 0 30px rgba(255, 215, 0, 0.05);[span_33](end_span)
+}
+
+/* Goal Card Specialized Component */
+.goal-card {
+    [span_34](start_span)[span_35](start_span)background: #333;[span_34](end_span)[span_35](end_span)
+    [span_36](start_span)border: 1.4px solid var(--primary);[span_36](end_span)
+    [span_37](start_span)border-radius: 7px;[span_37](end_span)
+    [span_38](start_span)padding: 0.81rem;[span_38](end_span)
+    [span_39](start_span)margin-bottom: 0.55rem;[span_39](end_span)
+}
