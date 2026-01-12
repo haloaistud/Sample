@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HaloAiStudios | Ultra Cyber Edition</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark" class="pattern-geometric">
+
+    <div class="theme-controls">
+        <button class="theme-btn" onclick="app.toggleTheme()" title="Toggle Light/Dark"></button>
+        <button class="theme-btn" style="background: #00ffff;" onclick="app.setHue(180)" title="Cyan Uplink"></button>
+        <button class="theme-btn" style="background: #ff00ff;" onclick="app.setHue(300)" title="Magenta Uplink"></button>
+    </div>
+
+    <canvas id="canvas-3d"></canvas>
+
+    <div class="app-container">
+        <header class="main-header">
+            <div class="logo-section">
+                <div class="logo">⟨ HALO AI STUDIOS ⟩</div>
+                <div class="tagline">Advanced Generative Systems</div>
+            </div>
+        </header>
+
+        <nav class="nav-tabs">
+            <button class="nav-tab active" onclick="app.switchTab('home', this)">
+                <i>N</i><span>NEXUS</span>
+            </button>
+            <button class="nav-tab" onclick="app.switchTab('vault', this)">
+                <i>V</i><span>VAULT</span>
+            </button>
+        </nav>
+
+        <main id="home" class="tab-content active">
+            <section class="card">
+                <h2 class="card-title">System Status: Online</h2>
+                <p>Deploying AI modules via automated CI/CD pipeline.</p>
+                <div class="grid-2">
+                    <div class="goal-card">
+                        <div class="goal-text">Core Engine: Active</div>
+                    </div>
+                    <div class="goal-card">
+                        <div class="goal-text">Neural Link: Established</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <main id="vault" class="tab-content">
+            <section class="card">
+                <h2 class="card-title">Encrypted Modules</h2>
+                <p>Accessing the Halo AI Studio repository...</p>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+  </html>
+                                                               
